@@ -24,18 +24,19 @@
 }
 
 .sketchWrapper{
-    max-width: 960px;
-    width: 100%;
+    width: 960px;
+    height: 960px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    gap: 10px;
+    border: 2px solid #369;
+    /* gap: 10px; */
 }
 .sketchItem{
     text-align: center;
-    padding: 15px;
-    border: 1px solid #369;
-    transition: all .4s;
+    /* padding: 15px; */
+    /* border: 1px solid #369; */
+    /* transition: all .4s; */
     color: #000;
 }
 .sketchItemHover{

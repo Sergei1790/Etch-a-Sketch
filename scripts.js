@@ -86,7 +86,7 @@ for(let i = 1; i<=256; i++){
     //     width:
     // `;
     sketchItem.className = 'sketchItem';
-    sketchItem.innerText = i;
+    // sketchItem.innerText = i;
     sketchWrapper.appendChild(sketchItem);
     sketchItemHover(sketchItem);
 }
@@ -103,10 +103,12 @@ resetButton.addEventListener('click', function() {
         alert('Please input number 100 or less');
     }
     for(let i = 1; i<=(newGrid * newGrid); i++){
-        sketchWrapper.style.gridTemplateColumns = `repeat(${newGrid}, 1fr)`;
+        sketchWrapper.style.gridTemplateColumns = `
+        repeat(${newGrid}, 1fr)`
+        ;
         let sketchItem = document.createElement('div');
         sketchItem.className = 'sketchItem';
-        sketchItem.innerText = i;
+        // sketchItem.innerText = i;
         sketchWrapper.appendChild(sketchItem);
         sketchItemHover(sketchItem);
     }
