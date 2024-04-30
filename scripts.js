@@ -15,7 +15,7 @@ let resetButton = document.createElement('button');
 resetButton.className = 'resetButton';
 resetButton.innerText = 'Reset';
 sketchButtonsWrapper.appendChild(resetButton);
-
+ 
 let randomColorButton = document.createElement('button');
 randomColorButton.className = 'randomColorButton';
 randomColorButton.innerText = 'Random Color';
